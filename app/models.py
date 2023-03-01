@@ -6,7 +6,7 @@ from .database import Base
 
 class Book(Base):
     """Note model."""
-    __tablename__ = 'notes'
+    __tablename__ = 'books'
     id = Column(GUID, primary_key=True, default=GUID_DEFAULT_SQLITE)
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
