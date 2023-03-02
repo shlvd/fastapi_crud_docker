@@ -5,13 +5,13 @@ from pydantic import BaseModel
 
 class BookBaseSchema(BaseModel):
     """Base schema for a book."""
-    id: str | None = None
+    id: str = None
     title: str
     content: str
-    category: str | None = None
+    category: str = None
     published: bool = False
-    createdAt: datetime | None = None
-    updatedAt: datetime | None = None
+    createdAt: datetime = None
+    updatedAt: datetime = None
 
     class Config:
         """Config for the book base schema."""

@@ -5,4 +5,4 @@ dev-down:
 	docker-compose down
 
 server:
-	uvicorn app.main:app --reload
+	uvicorn app.app:app --reload
